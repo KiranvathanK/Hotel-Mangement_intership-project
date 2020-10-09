@@ -1,0 +1,41 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+        $("#center").hide();
+    });
+</script>
+</head>
+<br><br>
+
+<div class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span>
+  <input type="text" name="" value="" ng-model="search"></div>
+
+  <div class="row " id="center">
+
+
+    <div class="col-md-offset-2 col-md-6 col-xs-12 ">
+
+      <table class="table">
+        <tr>
+          <td>
+            <b>  City Name</b>
+          </td>
+          <td>
+            <b>  Mail ID</b>
+          </td>
+          <td>
+              <b>Phone NO</b>
+          </td>
+        </tr>
+        <tr ng-repeat="d in datas | filter:search | orderBy:sort">
+          <td>{{d.name}}</td>
+          <td>{{d.id}}</td>
+          <td>{{d.ph }}</td>
+          <td class="btn btn-success">  <span class="glyphicon glyphicon-earphone"> </span>  </td>
+        </tr>
+
+
+
+      </table>
+</div>

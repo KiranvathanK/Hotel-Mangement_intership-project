@@ -1,0 +1,81 @@
+<html>
+  <head>
+      <!--h1>Advaitham Hotel</h1!-->
+
+<link rel="stylesheet" href="stylesheet/style.css">
+
+
+
+<!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
+
+<!--<script src="js/app1.js" charset="utf-8"></script>-->
+
+<link href="https://fonts.googleapis.com/css?family=Ruthie" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="js/avail_js.js" charset="utf-8"></script>
+<link rel="stylesheet" href="stylesheet/table.css">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+<body id="body" ng-app="myApp">
+    <div class="row" id="navigation">
+       <img class="col-xs-1"src="images/log3.png" alt="logo image" width="9%" height="15%">
+       <h1 class="col-xs-5">ADVAITHAM STAR HOTEL</h1>
+       </div>
+<div id="fal">
+       <div class="row" id="secondNav">
+        <a class="col-xs-1" href="index.html">HOME</a>
+          <a class="col-xs-1" href="galary.html">GALLERY</a>
+
+            <a class="col-xs-1" href="facilities.html">FACILITIES</a>
+
+            <a class="col-xs-1" href="rooms.html">ROOMS</a>
+              <a class="col-xs-2" href="bookroom.html">BOOK YOUR ROOM</a>
+              <a class="col-xs-1" href="contact.html">CONTACT US</a>
+              <a class="col-xs-1" href="feedback.html">FEEDBACK</a>
+              <a class="col-xs-1" href="revi.html">REVIEW</a>
+   </div></div>
+
+   <div class="row" id="center" ng-controller="myControllerFeeds">
+                     <div>
+                     <div class="ng-view ng-scope">
+                     <div class="row " id="center">
+
+
+
+                       <table>
+                         <thead>
+                           <tr >
+                             <th style="text-align:center">Name</th>
+                             <th style="text-align:center">Review</th>
+                             <th style="text-align:center">Comments</th>
+                             <th style="text-align:center">Email</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr ng-repeat="f in feeds">
+                             <td style="text-align:center"><strong>{{f.name}} </strong></td>
+                             <td style="text-align:center">{{f.review}} </td>
+                             <td style="text-align:center">{{f.comments}}</td>
+                             <td style="text-align:center">{{f.email}}</td>
+                           </tr>
+                         </tbody>
+</table>
+
+  </div></div></div></div>
+
+
+
+
+
+ </body>
+   </html>
